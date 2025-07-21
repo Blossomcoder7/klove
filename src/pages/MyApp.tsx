@@ -24,10 +24,8 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import "./Swiper.css"
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
+import 'swiper/swiper-bundle.css';
+
 import { IoReorderThree } from "react-icons/io5";
 
 const MyApp = () => {
@@ -481,7 +479,7 @@ const MyApp = () => {
         <div>
           <div className="flex w-full justify-evenly items-center h-full py-6 flex-wrap md:flex-nowrap">
             <div className="flex flex-col items-center justify-center text-start w-full md:w-1/2 space-y-3">
-              <div className="w-[557px]">
+              <div className="w-full px-8">
                 <p className="text-2xl mb-5">“Our team of practitioners is here to provide compassionate care, without judgement. From diagnosis, to treatment and beyond, we’re in this together — every step of the way.”</p>
                 <p className="font-bold">Dr. Kelly Anderson, MD</p>
                 <p> Medical Director, Klove</p>
@@ -550,7 +548,7 @@ const MyApp = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center w-full px-6 py-5 bg-[#f9f9f9]">
             <p className="flex items-center gap-1 text-sm text-gray-700 mb-4 md:mb-0"><FaCopyright />2024 All Rights Reserved by Klove</p>
-            <div className="py-3 flex gap-7">
+            <div className="py-3 flex gap-7 flex-wrap">
               <svg
                 className="icon icon--full-color"
                 xmlns="http://www.w3.org/2000/svg"
